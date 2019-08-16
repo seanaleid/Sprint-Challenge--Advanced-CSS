@@ -245,16 +245,24 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-}
-@media (max-width: 500px) {
-  .home .space-images .blast {
-    display: none;
-  }
 }
 .home .visit-planets {
   padding: 15px;
