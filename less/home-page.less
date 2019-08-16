@@ -23,14 +23,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
-  }
+   
+    .blast {
+      // width: 28%;
+      // margin: 20px 2.5%;
+      // border-radius: 20px;
+      // height: 100%;
 
+      @media @mobile{
+        display: none;
+      }
+    }
+  }
+  
   .visit-planets {
     padding: 15px;
     
@@ -51,9 +63,22 @@
     display: flex;
     justify-content: center;
     
+     @media @tablet {
+      .tablet();
+      padding: 20px 30px;
+    }
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      .mobile();
+    }
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        .mobile (100%, 0, 3%);
+        flex-direction: column;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -62,10 +87,20 @@
       p {
         margin-bottom: 26px;
         
+        @media @mobile {
+          .mobile();
+          padding-bottom: 10px;
+        }
       }
 
       .btn {
         .custom-btn(29%, 30%);
+        
+        @media @mobile {
+          .mobile (100%, 0, 20px);
+          
+        }
+          
       }
     }
 
@@ -73,6 +108,10 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @mobile {
+        .mobile(100%, 0, 3%);
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -88,6 +127,15 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      .tablet();
+      padding: 20px 30px;
+    }
+
+    @media @mobile {
+      .mobile();
+    }
+
     .walk-img {
       width: 30%;
       // margin-left: 4%;
@@ -96,6 +144,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @mobile {
+          display: none;
+        }
+
       }
     }
 
@@ -133,8 +186,15 @@
           opacity: 80%;
           font-style: italic;
           border-radius: 5px;
+          background-color: @nav-font;
+          color: @btn-color; 
+
         }
 
+      }
+
+      @media @mobile {
+        .mobile(100%, 0, 3%);
       }
 
     }

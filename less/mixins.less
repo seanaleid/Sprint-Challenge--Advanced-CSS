@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: @nav-font;
+    background-color: @header-font-color;
     width: @width;
     border-radius: 5px;
     color: @btn-color;
@@ -13,7 +13,7 @@
 
     &:hover {
         background-color: @btn-color;
-        color: @nav-font;
+        color: @header-font-color;
     }
 }
 
@@ -26,5 +26,26 @@
     font-size: @font-size;
     color: @nav-font;
     opacity: 20%;
-    font-style: italics;
+    font-style: italic;
+}
+
+.tablet (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.medium-devices (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.mobile (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
 }

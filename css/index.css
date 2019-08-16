@@ -168,20 +168,58 @@ p {
   background-color: #F6F6F6;
   color: #454A59;
 }
-.nav h1 {
+h1 {
   font-size: 5rem;
   padding: 20px 0;
 }
-.nav .navLinks {
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+.navLinks {
   display: flex;
   justify-content: space-between;
   width: 30%;
   padding: 10px 0;
 }
-.nav .navLinks a {
+@media (max-width: 767px) {
+  .navLinks {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .navLinks {
+    width: 80% 0%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  .navLinks {
+    width: 70%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  }
+}
+.navLinks a {
   color: #454A59;
   text-decoration: none;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .navLinks a {
+    font-size: 15px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
 }
 footer {
   color: #22283B;
@@ -213,6 +251,11 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -229,8 +272,35 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .home .walk {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -238,11 +308,20 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text p {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    padding-bottom: 10px;
+  }
+}
 .home .walk .walk-text .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #454A59;
+  background-color: #23293B;
   width: 29%;
   border-radius: 5px;
   color: #FFFFFF;
@@ -252,11 +331,27 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background-color: #FFFFFF;
-  color: #454A59;
+  color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+    display: flex;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
@@ -270,6 +365,23 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .home .walk.subscribe {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk.subscribe {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+  }
+}
 .home .walk.subscribe .walk-img {
   width: 30%;
 }
@@ -277,6 +389,11 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk.subscribe .walk-img img {
+    display: none;
+  }
 }
 .home .walk.subscribe .walk-text {
   width: 50%;
@@ -300,4 +417,14 @@ footer {
   opacity: 80%;
   font-style: italic;
   border-radius: 5px;
+  background-color: #454A59;
+  color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .home .walk.subscribe .walk-text {
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+    display: flex;
+  }
 }
