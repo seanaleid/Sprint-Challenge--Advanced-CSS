@@ -4,6 +4,10 @@
 
   .intro {
 
+    .headerPic {
+      border-radius: 10px; 
+    }
+
     h2 {
       padding: 15px;
     }
@@ -29,6 +33,7 @@
 
   .visit-planets {
     padding: 15px;
+    
 
     h3 {
       margin-top: 11px;
@@ -45,6 +50,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
 
     .walk-text {
       width: 50%;
@@ -55,9 +61,11 @@
 
       p {
         margin-bottom: 26px;
+        
       }
 
       .btn {
+        .custom-btn(29%, 30%);
       }
     }
 
@@ -71,5 +79,65 @@
         border-radius: 10px;
       }
     }
+  }
+
+  .walk.subscribe {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .walk-img {
+      width: 30%;
+      // margin-left: 4%;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    .walk-text {
+      width: 50%;
+      
+      h3 {
+        margin-bottom: 10px;
+      }
+      
+      p {
+        margin-bottom: 26px;
+      }
+      
+      .form {
+        // display: flex;
+        // padding: 10px 0; 
+        // background-color: red;
+      }
+
+      .form form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        padding: 10px 0; 
+        // background-color: red;
+
+        input[type=text] {
+          // background-color: red;
+          // .subscribe-btn();
+          // display: flex;
+          font-size: 15px;
+          color: @nav-font;
+          opacity: 80%;
+          font-style: italic;
+          border-radius: 5px;
+        }
+
+      }
+
+    }
+
   }
 }// home

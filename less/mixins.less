@@ -1,1 +1,30 @@
 // Mixins Here
+
+.custom-btn(@width: 80%, @height: 15%) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @nav-font;
+    width: @width;
+    border-radius: 5px;
+    color: @btn-color;
+    .font-btn();
+    cursor: pointer;
+
+    &:hover {
+        background-color: @btn-color;
+        color: @nav-font;
+    }
+}
+
+.font-btn(@font-size: 15px) {
+    font-size: @font-size;
+    padding: 10px;
+}
+
+.subscribe-btn(@font-size: 15px){
+    font-size: @font-size;
+    color: @nav-font;
+    opacity: 20%;
+    font-style: italics;
+}
