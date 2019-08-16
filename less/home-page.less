@@ -24,14 +24,21 @@
     width: 100%;
     
     .blast {
+      // border:5px dashed red;
 
       @media @mobile {
         // .mobile(100%, 0, 5%);
-        border-radius: 5px;
         width:100%;
-        padding: 5%;
+        margin: 5%;
       }
+
     }
+        
+    .blast img {
+          @media @mobile {
+            border-radius: 50px; 
+          }
+        }
 
     .sky, .launch {
       // width: 28%;
@@ -86,8 +93,8 @@
       width: 50%;
 
       @media @mobile {
-        .mobile (100%, 0, 3%);
         flex-direction: column;
+        .mobile(100%, 0, 3%);
       }
 
       h3 {
@@ -107,7 +114,7 @@
         .custom-btn(29%, 30%);
         
         @media @mobile {
-          .mobile (100%, 0, 20px);
+          .mobile(100%, 0, 20px);
           
         }
           
@@ -173,11 +180,11 @@
         margin-bottom: 26px;
       }
       
-      .form {
-        // display: flex;
-        // padding: 10px 0; 
-        // background-color: red;
-      }
+      // .form {
+      //   display: flex;
+      //   padding: 10px 0; 
+      //   background-color: red;
+      // }
 
       .form form {
         display: flex;
@@ -187,18 +194,34 @@
         padding: 10px 0; 
         // background-color: red;
 
+        @media @mobile {
+          .mobile(100%, 0, @padding: 20px 5px);
+          // border: 5px dashed red;
+        }
+
         input[type=text] {
-          // background-color: red;
+          background-color: red;
           // .subscribe-btn();
           // display: flex;
           font-size: 15px;
           color: @nav-font;
-          opacity: 80%;
           font-style: italic;
+          font-weight: bold;
           border-radius: 5px;
-          background-color: @nav-font;
-          color: @btn-color; 
+          background-color: @btn-color;
+          color: rgba(35, 41, 59, .4); 
+          padding: 2% 3%;
 
+          
+        }
+        
+        input[type=submit] {
+          .custom-btn();
+
+          @media @mobile {
+            .custom-btn();
+            // border: 5px dashed red;
+          }
         }
 
       }

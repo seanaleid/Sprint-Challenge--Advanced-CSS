@@ -247,9 +247,13 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
-    border-radius: 5px;
     width: 100%;
-    padding: 5%;
+    margin: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast img {
+    border-radius: 50px;
   }
 }
 @media (max-width: 500px) {
@@ -303,11 +307,11 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
+    flex-direction: column;
     width: 100%;
     margin: 0;
     padding: 3%;
     display: flex;
-    flex-direction: column;
   }
 }
 .home .walk .walk-text h3 {
@@ -419,14 +423,58 @@ footer {
   justify-content: center;
   padding: 10px 0;
 }
+@media (max-width: 500px) {
+  .home .walk.subscribe .walk-text .form form {
+    width: 100%;
+    margin: 0;
+    padding: 20px 5px;
+    display: flex;
+  }
+}
 .home .walk.subscribe .walk-text .form form input[type=text] {
+  background-color: red;
   font-size: 15px;
   color: #454A59;
-  opacity: 80%;
   font-style: italic;
+  font-weight: bold;
   border-radius: 5px;
-  background-color: #454A59;
+  background-color: #FFFFFF;
+  color: rgba(35, 41, 59, 0.4);
+  padding: 2% 3%;
+}
+.home .walk.subscribe .walk-text .form form input[type=submit] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23293B;
+  width: 80%;
+  border-radius: 5px;
   color: #FFFFFF;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.home .walk.subscribe .walk-text .form form input[type=submit]:hover {
+  background-color: #FFFFFF;
+  color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk.subscribe .walk-text .form form input[type=submit] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23293B;
+    width: 80%;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .home .walk.subscribe .walk-text .form form input[type=submit]:hover {
+    background-color: #FFFFFF;
+    color: #23293B;
+  }
 }
 @media (max-width: 500px) {
   .home .walk.subscribe .walk-text {
