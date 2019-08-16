@@ -4,6 +4,10 @@
 
   .intro {
 
+    .headerPic {
+      border-radius: 10px; 
+    }
+
     h2 {
       padding: 15px;
     }
@@ -18,17 +22,40 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    .blast {
 
+      @media @mobile {
+        // .mobile(100%, 0, 5%);
+        border-radius: 5px;
+        width:100%;
+        padding: 5%;
+      }
+    }
+
+    .sky, .launch {
+      // width: 28%;
+      // margin: 20px 2.5%;
+      // border-radius: 20px;
+      // height: 100%;
+
+      @media @mobile{
+        display: none;
+      }
+    }
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
+   
   }
-
+  
   .visit-planets {
     padding: 15px;
+    
 
     h3 {
       margin-top: 11px;
@@ -45,9 +72,23 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+     @media @tablet {
+      .tablet();
+      padding: 20px 30px;
+    }
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      .mobile();
+    }
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        .mobile (100%, 0, 3%);
+        flex-direction: column;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -55,9 +96,21 @@
 
       p {
         margin-bottom: 26px;
+        
+        @media @mobile {
+          .mobile();
+          padding-bottom: 10px;
+        }
       }
 
       .btn {
+        .custom-btn(29%, 30%);
+        
+        @media @mobile {
+          .mobile (100%, 0, 20px);
+          
+        }
+          
       }
     }
 
@@ -65,11 +118,96 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @mobile {
+        .mobile(100%, 0, 3%);
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+  }
+
+  .walk.subscribe {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+      .tablet();
+      padding: 20px 30px;
+    }
+
+    @media @mobile {
+      .mobile();
+    }
+
+    .walk-img {
+      width: 30%;
+      // margin-left: 4%;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+
+        @media @mobile {
+          display: none;
+        }
+
+      }
+    }
+
+    .walk-text {
+      width: 50%;
+      
+      h3 {
+        margin-bottom: 10px;
+      }
+      
+      p {
+        margin-bottom: 26px;
+      }
+      
+      .form {
+        // display: flex;
+        // padding: 10px 0; 
+        // background-color: red;
+      }
+
+      .form form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        padding: 10px 0; 
+        // background-color: red;
+
+        input[type=text] {
+          // background-color: red;
+          // .subscribe-btn();
+          // display: flex;
+          font-size: 15px;
+          color: @nav-font;
+          opacity: 80%;
+          font-style: italic;
+          border-radius: 5px;
+          background-color: @nav-font;
+          color: @btn-color; 
+
+        }
+
+      }
+
+      @media @mobile {
+        .mobile(100%, 0, 3%);
+      }
+
+    }
+
   }
 }// home

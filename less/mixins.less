@@ -1,1 +1,51 @@
 // Mixins Here
+
+.custom-btn(@width: 80%, @height: 15%) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @header-font-color;
+    width: @width;
+    border-radius: 5px;
+    color: @btn-color;
+    .font-btn();
+    cursor: pointer;
+
+    &:hover {
+        background-color: @btn-color;
+        color: @header-font-color;
+    }
+}
+
+.font-btn(@font-size: 15px) {
+    font-size: @font-size;
+    padding: 10px;
+}
+
+.subscribe-btn(@font-size: 15px){
+    font-size: @font-size;
+    color: @nav-font;
+    opacity: 20%;
+    font-style: italic;
+}
+
+.tablet (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.medium-devices (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
+
+.mobile (@width: 100%, @margin: 0%, @padding: 0%) {
+    width: @width;
+    margin: @margin;
+    padding: @padding;
+    display:flex;
+}
